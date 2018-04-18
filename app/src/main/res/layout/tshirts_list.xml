@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/tshirt_iv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="24dp"
+        app:srcCompat="@drawable/t1" />
+
+    <TextView
+        android:id="@+id/tshirt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adidas"
+        android:layout_alignTop="@+id/tshirt_iv"
+        android:layout_alignLeft="@+id/tshirt_count"
+        android:layout_alignStart="@+id/tshirt_count" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tshirt_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:layout_toEndOf="@+id/tshirt_iv"
+        android:layout_toRightOf="@+id/tshirt_iv"
+        android:text="Count" />
+
+    <EditText
+        android:id="@+id/tshirt_count"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tshirt_title"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@+id/textView11"
+        android:ems="10"
+        android:inputType="number"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/tshirt_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tshirt_iv"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_alignStart="@+id/textView11"
+        android:text="40$" />
+
+    <Button
+        android:id="@+id/add_to_cart_tshirt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add To Cart"
+        android:layout_alignTop="@+id/tshirt_title"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/tshirt_cost" />
+</RelativeLayout>
